@@ -1,0 +1,83 @@
+Draft memo
+# install virtualenvwrapper in windows
+-----------------------------------------
+pip install virtualenvwrapper-win
+-----------------------------------------
+
+# make virtual environment and activate automatically
+-----------------------------------------
+mkvirtualenv myapp
+-----------------------------------------
+
+# install django
+-----------------------------------------
+pip install django
+-----------------------------------------
+
+# Create django project
+-----------------------------------------
+django-admin startproject myproject
+-----------------------------------------
+
+# Re-activate virtual environment
+-----------------------------------------
+workon myapp
+-----------------------------------------
+
+# Create New app
+-----------------------------------------
+py manage.py startapp myapp
+-----------------------------------------
+
+# install psycopg2
+-----------------------------------------
+pip install psycopg2
+-----------------------------------------
+
+# install Pillow
+-----------------------------------------
+pip install Pillow
+-----------------------------------------
+
+#configure django for postgresql in settings.py
+-----------------------------------------
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'project_name',
+        'USER': 'username',
+        'PASSWORD': 'password',
+        'HOST': 'localhost'
+    }
+}
+-----------------------------------------
+
+
+# Create super user
+-----------------------------------------
+py manage.py createsuperuser
+-----------------------------------------
+
+
+# Make migration
+-----------------------------------------
+py manage.py makemigrations
+-----------------------------------------
+py manage.py migrate
+-----------------------------------------
+
+# Set static files directory add in settings.py
+-----------------------------------------
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+-----------------------------------------
+and add this to the TEMPLATES array
+-----------------------------------------
+'DIRS': [BASE_DIR/'templates'],
+-----------------------------------------
+
+openweathermap api key
+-----------------------------------------
+02552f150a2fac18ece0416885e3e266
+-----------------------------------------
+
+
