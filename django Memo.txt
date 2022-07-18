@@ -1,4 +1,8 @@
 Draft memo
+=========================================
+py manage.py runserver
+=========================================
+
 # install virtualenvwrapper in windows
 -----------------------------------------
 pip install virtualenvwrapper-win
@@ -44,9 +48,9 @@ pip install Pillow
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'project_name',
-        'USER': 'username',
-        'PASSWORD': 'password',
+        'NAME': 'db_name',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
         'HOST': 'localhost'
     }
 }
@@ -79,5 +83,11 @@ openweathermap api key
 -----------------------------------------
 02552f150a2fac18ece0416885e3e266
 -----------------------------------------
+
+
+#########################################
+Realtime application requirements
+#########################################
+# 
 
 
