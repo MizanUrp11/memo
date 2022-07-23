@@ -142,11 +142,12 @@ admin.site.register(model_name, admin.OSMGeoAdmin)
 
 # install django rest framwork
 -----------------------------------------
-pip install djangorestframework
+pip install djangorestframework djangorestframework-gis
 
 then add in
 INSTALLED_APPS = [
     ...
     'rest_framework',
+    'rest_framework_gis',
 ]
 -----------------------------------------
