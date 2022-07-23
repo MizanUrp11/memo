@@ -88,7 +88,7 @@ and add this to the TEMPLATES array
 'DIRS': [BASE_DIR/'templates'],
 -----------------------------------------
 
-openweathermap api key
+# openweathermap api key
 -----------------------------------------
 02552f150a2fac18ece0416885e3e266
 -----------------------------------------
@@ -123,4 +123,16 @@ GDAL_LIBRARY_PATH = r'C:\OSGeo4W\bin\gdal305'
 INSTALLED_APPS = [
 'django.contrib.gis',
 ]
+-----------------------------------------
+
+# Add in the models.py
+-----------------------------------------
+from django.contrib.gis.db import models
+-----------------------------------------
+
+# Add in the admin.py
+-----------------------------------------
+from django.contrib.gis import admin
+then
+admin.site.register(model_name, admin.GISModelAdmin)
 -----------------------------------------
